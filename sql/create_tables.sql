@@ -18,9 +18,10 @@ create table users(
 );
 
 create table cycle(
-	cyle_id int primary key, 
+	cycle_id int primary key, 
+	user_cycle_id int,
 	user_id int not null, 
-	cyle_length NUMBER(3), 
+	cycle_length NUMBER(3), 
 	headache NUMBER(1), 
 	cramps NUMBER(1), 
 	nausea  NUMBER(1), 
@@ -28,7 +29,7 @@ create table cycle(
 	acne NUMBER(1), 
 	bloatng NUMBER(1),
 	period_start date, 
-	--period_end date,
+	period_end date,
     constraint fk_user_id foreign key (user_id) references users(user_id)
 );
 
