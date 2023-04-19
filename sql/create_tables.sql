@@ -13,17 +13,13 @@ create table users(
 	birthday date, 
 	uheight NUMBER(4), 
 	uweight NUMBER(4), 
-	bmi float, 
-	curr_stage number(1) not null, 
+	bmi float, 	
 	num_preg NUMBER(2),
-    constraint fk_curr_stage_id foreign key (curr_stage) references stage(stage_id)
 );
 
 create table cycle(
 	cyle_id int primary key, 
-	user_id int not null,
-	period_start date, 
-	period_end date, 
+	user_id int not null, 
 	cyle_length NUMBER(3), 
 	headache NUMBER(1), 
 	cramps NUMBER(1), 
@@ -31,6 +27,8 @@ create table cycle(
 	fatigue NUMBER(1), 
 	acne NUMBER(1), 
 	bloatng NUMBER(1),
+	period_start date, 
+	--period_end date,
     constraint fk_user_id foreign key (user_id) references users(user_id)
 );
 
