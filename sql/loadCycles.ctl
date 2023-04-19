@@ -4,10 +4,10 @@ APPEND INTO TABLE cycle
 FIELDS TERMINATED BY ','
 OPTIONALLY ENCLOSED BY '"'
 (
- 	cyle_id, 
+ 	cycle_id, 
 	user_cycle_id,
 	user_id, 
-	cyle_length, 
+	cycle_length, 
 	headache, 
 	cramps, 
 	nausea, 
