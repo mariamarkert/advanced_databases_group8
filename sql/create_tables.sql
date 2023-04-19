@@ -28,7 +28,7 @@ create table cycle(
 	acne NUMBER(1), 
 	bloatng NUMBER(1),
 	period_start date, 
-	--period_end date,
+	period_end date,
     constraint fk_user_id foreign key (user_id) references users(user_id)
 );
 
