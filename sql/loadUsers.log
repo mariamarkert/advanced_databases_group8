@@ -1,0 +1,63 @@
+
+SQL*Loader: Release 11.2.0.2.0 - Production on Wed Apr 19 22:42:06 2023
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   loadUsers2.ctl
+Data File:      ../data/users3.csv
+  Bad File:     users3.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table USERS, loaded from every logical record.
+Insert option in effect for this table: APPEND
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+USER_ID                             FIRST     *   ,  O(") CHARACTER            
+USERNAME                             NEXT     *   ,  O(") CHARACTER            
+UPASSWORD                            NEXT     *   ,  O(") CHARACTER            
+FIRST_NAME                           NEXT     *   ,  O(") CHARACTER            
+LAST_NAME                            NEXT     *   ,  O(") CHARACTER            
+BIRTHDAY                             NEXT     *   ,  O(") CHARACTER            
+    SQL string for column : "TO_DATE(:birthday, 'YYYY-MM-DD')"
+UHEIGHT                              NEXT     *   ,  O(") CHARACTER            
+UWEIGHT                              NEXT     *   ,  O(") CHARACTER            
+BMI                                  NEXT     *   ,  O(") CHARACTER            
+NUM_PREG                             NEXT     *  WHT O(") CHARACTER            
+
+Record 1: Rejected - Error on table USERS, column USER_ID.
+ORA-01722: invalid number
+
+Record 2: Rejected - Error on table USERS, column NUM_PREG.
+ORA-01722: invalid number
+
+
+Table USERS:
+  125 Rows successfully loaded.
+  2 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 165120 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:           127
+Total logical records rejected:         2
+Total logical records discarded:        0
+
+Run began on Wed Apr 19 22:42:06 2023
+Run ended on Wed Apr 19 22:42:06 2023
+
+Elapsed time was:     00:00:00.03
+CPU time was:         00:00:00.01

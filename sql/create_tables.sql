@@ -14,7 +14,7 @@ create table users(
 	uheight NUMBER(4), 
 	uweight NUMBER(4), 
 	bmi float, 	
-	num_preg NUMBER(2),
+	num_preg int
 );
 
 create table cycle(
