@@ -1,11 +1,11 @@
 
-SQL*Loader: Release 11.2.0.2.0 - Production on Wed Apr 19 22:42:06 2023
+SQL*Loader: Release 11.2.0.2.0 - Production on Wed Apr 19 23:57:07 2023
 
 Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
 
-Control File:   loadUsers2.ctl
-Data File:      ../data/users3.csv
-  Bad File:     users3.bad
+Control File:   loadUsers.ctl
+Data File:      ../data/users.csv
+  Bad File:     users.bad
   Discard File:  none specified
  
  (Allow all discards)
@@ -37,13 +37,10 @@ NUM_PREG                             NEXT     *  WHT O(") CHARACTER
 Record 1: Rejected - Error on table USERS, column USER_ID.
 ORA-01722: invalid number
 
-Record 2: Rejected - Error on table USERS, column NUM_PREG.
-ORA-01722: invalid number
-
 
 Table USERS:
-  125 Rows successfully loaded.
-  2 Rows not loaded due to data errors.
+  126 Rows successfully loaded.
+  1 Row not loaded due to data errors.
   0 Rows not loaded because all WHEN clauses were failed.
   0 Rows not loaded because all fields were null.
 
@@ -53,11 +50,11 @@ Read   buffer bytes: 1048576
 
 Total logical records skipped:          0
 Total logical records read:           127
-Total logical records rejected:         2
+Total logical records rejected:         1
 Total logical records discarded:        0
 
-Run began on Wed Apr 19 22:42:06 2023
-Run ended on Wed Apr 19 22:42:06 2023
+Run began on Wed Apr 19 23:57:07 2023
+Run ended on Wed Apr 19 23:57:07 2023
 
 Elapsed time was:     00:00:00.03
-CPU time was:         00:00:00.01
+CPU time was:         00:00:00.00

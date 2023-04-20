@@ -1,0 +1,63 @@
+
+SQL*Loader: Release 11.2.0.2.0 - Production on Wed Apr 19 23:57:30 2023
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   loadCycles.ctl
+Data File:      ../data/cleaned_cycles4.csv
+  Bad File:     cleaned_cycles4.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table CYCLE, loaded from every logical record.
+Insert option in effect for this table: APPEND
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+CYCLE_ID                            FIRST     *   ,  O(") CHARACTER            
+USER_CYCLE_ID                        NEXT     *   ,  O(") CHARACTER            
+USER_ID                              NEXT     *   ,  O(") CHARACTER            
+CYCLE_LENGTH                         NEXT     *   ,  O(") CHARACTER            
+HEADACHE                             NEXT     *   ,  O(") CHARACTER            
+CRAMPS                               NEXT     *   ,  O(") CHARACTER            
+NAUSEA                               NEXT     *   ,  O(") CHARACTER            
+FATIGUE                              NEXT     *   ,  O(") CHARACTER            
+ACNE                                 NEXT     *   ,  O(") CHARACTER            
+BLOATNG                              NEXT     *   ,  O(") CHARACTER            
+PERIOD_START                         NEXT     *   ,  O(") CHARACTER            
+    SQL string for column : "TO_DATE(:period_start, 'YYYY-MM-DD')"
+PERIOD_END                           NEXT     *   ,  O(") CHARACTER            
+    SQL string for column : "TO_DATE(:period_end, 'YYYY-MM-DD')"
+
+Record 1: Rejected - Error on table CYCLE, column CYCLE_ID.
+ORA-01722: invalid number
+
+
+Table CYCLE:
+  1283 Rows successfully loaded.
+  1 Row not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 198144 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:          1284
+Total logical records rejected:         1
+Total logical records discarded:        0
+
+Run began on Wed Apr 19 23:57:30 2023
+Run ended on Wed Apr 19 23:57:30 2023
+
+Elapsed time was:     00:00:00.07
+CPU time was:         00:00:00.01
