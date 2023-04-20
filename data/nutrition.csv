@@ -1,0 +1,5 @@
+nut_id,nutrient,food,phase
+1,Iron,"Red meat, poultry, fish, beans, lentils, tofu, fortified cereals, leafy green vegetables, dried fruits",1
+2,"Balanced diet (carbohydrates, proteins, healthy fats)","Whole grains, fruits, vegetables, lean proteins, nuts, seeds, healthy oils",2
+3,Antioxidants,"Berries, citrus fruits, dark leafy greens, colorful vegetables",3
+4,"Complex carbohydrates, healthy fats, protein, calcium","Complex carbohydrates (whole grains, legumes), healthy fats (avocado, nuts, seeds), lean proteins (poultry, fish, beans), calcium-rich foods (dairy products, leafy green vegetables, fortified foods)",4
