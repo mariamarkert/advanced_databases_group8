@@ -3,9 +3,9 @@ SQL*Loader: Release 11.2.0.2.0 - Production on Thu Apr 20 01:15:37 2023
 
 Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
 
-Control File:   loadStages.ctl
-Data File:      ../data/stages.csv
-  Bad File:     stages.bad
+Control File:   loadNutr.ctl
+Data File:      ../data/nutrition.csv
+  Bad File:     nutrition.bad
   Discard File:  none specified
  
  (Allow all discards)
@@ -17,32 +17,37 @@ Bind array:     64 rows, maximum of 256000 bytes
 Continuation:    none specified
 Path used:      Conventional
 
-Table STAGE, loaded from every logical record.
+Table NUTRITION, loaded from every logical record.
 Insert option in effect for this table: APPEND
 
    Column Name                  Position   Len  Term Encl Datatype
 ------------------------------ ---------- ----- ---- ---- ---------------------
-STAGE_ID                            FIRST     *   ,  O(") CHARACTER            
-STG_NAME                             NEXT     *   ,  O(") CHARACTER            
+NUT_ID                              FIRST     *   ,  O(") CHARACTER            
+NUT_NAME                             NEXT     *   ,  O(") CHARACTER            
+NUT_DESC                             NEXT     *   ,  O(") CHARACTER            
+IDEAL_STAGE_ID                       NEXT     *  WHT O(") CHARACTER            
+
+Record 1: Rejected - Error on table NUTRITION, column NUT_ID.
+ORA-01722: invalid number
 
 
-Table STAGE:
+Table NUTRITION:
   4 Rows successfully loaded.
-  0 Rows not loaded due to data errors.
+  1 Row not loaded due to data errors.
   0 Rows not loaded because all WHEN clauses were failed.
   0 Rows not loaded because all fields were null.
 
 
-Space allocated for bind array:                  33024 bytes(64 rows)
+Space allocated for bind array:                  66048 bytes(64 rows)
 Read   buffer bytes: 1048576
 
 Total logical records skipped:          0
-Total logical records read:             4
-Total logical records rejected:         0
+Total logical records read:             5
+Total logical records rejected:         1
 Total logical records discarded:        0
 
 Run began on Thu Apr 20 01:15:37 2023
 Run ended on Thu Apr 20 01:15:37 2023
 
-Elapsed time was:     00:00:00.03
+Elapsed time was:     00:00:00.02
 CPU time was:         00:00:00.00

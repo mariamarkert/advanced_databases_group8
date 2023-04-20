@@ -34,10 +34,10 @@ create table cycle(
 );
 
 create table exercise(
-	ex_id number(4) primary key, 
-	ex_name varchar(50), 
-	ex_type varchar(50), 
-	ex_desc varchar(550), 
+	ex_id int primary key, 
+	ex_name varchar(65), 
+	ex_type varchar(65), 
+	ex_desc varchar(700), 
 	ideal_stage_id number(1) not null,
 	constraint fk_ex_ideal_stage_id foreign key (ideal_stage_id) references stage(stage_id)
 );
