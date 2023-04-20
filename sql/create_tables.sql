@@ -43,10 +43,18 @@ create table exercise(
 );
 
 create table nutrition(
-	nut_id number(4) primary key, 
-	nut_name varchar(20), 
-	nutrient varchar(20), 
-	macro varchar(12), 
+	nut_phase_id number(4) primary key, 
+	nut_name varchar(40), 
+	nut_desc varchar(200), 
 	ideal_stage_id number(1) not null,
     constraint fk_nut_ideal_stage_id foreign key (ideal_stage_id) references stage(stage_id)
 );
+
+--create table nutrition(
+--	nut_id number(4) primary key, 
+--	nut_name varchar(20), 
+--	nutrient varchar(20), 
+--	macro varchar(12), 
+--	ideal_stage_id number(1) not null,
+--   constraint fk_nut_ideal_stage_id foreign key (ideal_stage_id) references stage(stage_id)
+--);
