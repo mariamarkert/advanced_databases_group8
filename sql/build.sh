@@ -1,11 +1,11 @@
 #!/bin/bash
 
-sqlplus timmy/timmy <<EOF
+sqlplus ramzi/ramzi <<EOF
 @create_tables
 exit
 EOF
-sqlldr timmy/timmy control=loadStages.ctl
-sqlldr timmy/timmy control=loadUsers.ctl
-sqlldr timmy/timmy control=loadCycles.ctl
-sqlldr timmy/timmy control=loadNutr.ctl
-sqlldr timmy/timmy control=loadExc.ctl
+sqlldr ramzi/ramzi control=loadStages.ctl
+sqlldr ramzi/ramzi control=loadUsers.ctl
+sqlldr ramzi/ramzi control=loadCycles.ctl
+sqlldr ramzi/ramzi control=loadNutr.ctl
+sqlldr ramzi/ramzi control=loadExc.ctl
