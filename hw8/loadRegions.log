@@ -1,0 +1,64 @@
+
+SQL*Loader: Release 11.2.0.2.0 - Production on Thu Apr 27 20:56:02 2023
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   loadData/loadRegions.ctl
+Data File:      data/regions.csv
+  Bad File:     loadData/regions.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table REGIONS, loaded from every logical record.
+Insert option in effect for this table: APPEND
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+REGCODE                             FIRST     *   ,  O(") CHARACTER            
+REGNAME                              NEXT     *   ,  O(") CHARACTER            
+
+Record 1: Rejected - Error on table REGIONS.
+ORA-00001: unique constraint (RAMZI.SYS_C007126) violated
+
+Record 2: Rejected - Error on table REGIONS.
+ORA-00001: unique constraint (RAMZI.SYS_C007126) violated
+
+Record 3: Rejected - Error on table REGIONS.
+ORA-00001: unique constraint (RAMZI.SYS_C007126) violated
+
+Record 4: Rejected - Error on table REGIONS.
+ORA-00001: unique constraint (RAMZI.SYS_C007126) violated
+
+Record 5: Rejected - Error on table REGIONS.
+ORA-00001: unique constraint (RAMZI.SYS_C007126) violated
+
+
+Table REGIONS:
+  0 Rows successfully loaded.
+  5 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                  33024 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:             5
+Total logical records rejected:         5
+Total logical records discarded:        0
+
+Run began on Thu Apr 27 20:56:02 2023
+Run ended on Thu Apr 27 20:56:02 2023
+
+Elapsed time was:     00:00:00.04
+CPU time was:         00:00:00.01

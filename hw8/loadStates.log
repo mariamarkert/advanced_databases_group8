@@ -1,0 +1,200 @@
+
+SQL*Loader: Release 11.2.0.2.0 - Production on Thu Apr 27 20:56:02 2023
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   loadData/loadStates.ctl
+Data File:      data/statesinfo.csv
+  Bad File:     loadData/statesinfo.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table STATES, loaded from every logical record.
+Insert option in effect for this table: APPEND
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+STCODE                              FIRST     *   ,  O(") CHARACTER            
+REGCODE                              NEXT     *   ,  O(") CHARACTER            
+STNAME                               NEXT     *   ,  O(") CHARACTER            
+
+Record 1: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 2: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 3: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 4: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 5: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 6: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 7: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 8: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 9: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 10: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 11: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 12: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 13: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 14: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 15: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 16: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 17: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 18: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 19: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 20: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 21: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 22: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 23: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 24: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 25: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 26: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 27: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 28: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 29: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 30: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 31: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 32: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 33: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 34: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 35: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 36: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 37: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 38: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 39: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 40: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 41: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 42: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 43: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 44: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 45: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 46: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 47: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 48: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 49: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+Record 50: Rejected - Error on table STATES.
+ORA-00001: unique constraint (RAMZI.SYS_C007128) violated
+
+
+Table STATES:
+  0 Rows successfully loaded.
+  50 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                  49536 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:            50
+Total logical records rejected:        50
+Total logical records discarded:        0
+
+Run began on Thu Apr 27 20:56:02 2023
+Run ended on Thu Apr 27 20:56:02 2023
+
+Elapsed time was:     00:00:00.04
+CPU time was:         00:00:00.01

@@ -1,0 +1,90 @@
+
+SQL*Loader: Release 11.2.0.2.0 - Production on Wed May 3 18:16:54 2023
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   loadExc.ctl
+Data File:      ../data/exercises.csv
+  Bad File:     exercises.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table EXERCISE, loaded from every logical record.
+Insert option in effect for this table: APPEND
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+EX_ID                               FIRST     *   ,  O(") CHARACTER            
+EX_NAME                              NEXT     *   ,  O(") CHARACTER            
+EX_TYPE                              NEXT     *   ,  O(") CHARACTER            
+EX_DESC                              NEXT     *   ,  O(") CHARACTER            
+IDEAL_STAGE_ID                       NEXT     *  WHT O(") CHARACTER            
+
+Record 9: Rejected - Error on table EXERCISE, column EX_DESC.
+Field in data file exceeds maximum length
+Record 10: Rejected - Error on table EXERCISE, column EX_DESC.
+Field in data file exceeds maximum length
+Record 11: Rejected - Error on table EXERCISE, column EX_DESC.
+Field in data file exceeds maximum length
+Record 12: Rejected - Error on table EXERCISE, column EX_DESC.
+Field in data file exceeds maximum length
+Record 13: Rejected - Error on table EXERCISE, column EX_DESC.
+Field in data file exceeds maximum length
+Record 14: Rejected - Error on table EXERCISE, column EX_DESC.
+Field in data file exceeds maximum length
+Record 15: Rejected - Error on table EXERCISE, column EX_DESC.
+Field in data file exceeds maximum length
+Record 16: Rejected - Error on table EXERCISE, column EX_DESC.
+Field in data file exceeds maximum length
+Record 17: Rejected - Error on table EXERCISE, column EX_DESC.
+Field in data file exceeds maximum length
+Record 18: Rejected - Error on table EXERCISE, column EX_DESC.
+Field in data file exceeds maximum length
+Record 19: Rejected - Error on table EXERCISE, column EX_DESC.
+Field in data file exceeds maximum length
+Record 20: Rejected - Error on table EXERCISE, column EX_DESC.
+Field in data file exceeds maximum length
+Record 21: Rejected - Error on table EXERCISE, column EX_DESC.
+Field in data file exceeds maximum length
+Record 22: Rejected - Error on table EXERCISE, column EX_DESC.
+Field in data file exceeds maximum length
+Record 23: Rejected - Error on table EXERCISE, column EX_DESC.
+Field in data file exceeds maximum length
+Record 24: Rejected - Error on table EXERCISE, column EX_DESC.
+Field in data file exceeds maximum length
+Record 25: Rejected - Error on table EXERCISE, column EX_DESC.
+Field in data file exceeds maximum length
+Record 1: Rejected - Error on table EXERCISE, column EX_ID.
+ORA-01722: invalid number
+
+Record 26: Rejected - Error on table EXERCISE, column EX_DESC.
+Field in data file exceeds maximum length
+
+Table EXERCISE:
+  7 Rows successfully loaded.
+  19 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                  82560 bytes(64 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:            26
+Total logical records rejected:        19
+Total logical records discarded:        0
+
+Run began on Wed May 03 18:16:54 2023
+Run ended on Wed May 03 18:16:55 2023
+
+Elapsed time was:     00:00:00.03
+CPU time was:         00:00:00.01

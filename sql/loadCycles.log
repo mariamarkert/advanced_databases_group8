@@ -1,11 +1,11 @@
 
-SQL*Loader: Release 11.2.0.2.0 - Production on Wed Apr 19 23:57:30 2023
+SQL*Loader: Release 11.2.0.2.0 - Production on Wed May 3 18:16:54 2023
 
 Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
 
 Control File:   loadCycles.ctl
-Data File:      ../data/cleaned_cycles4.csv
-  Bad File:     cleaned_cycles4.bad
+Data File:      ../data/cycles.csv
+  Bad File:     cycles.bad
   Discard File:  none specified
  
  (Allow all discards)
@@ -56,8 +56,8 @@ Total logical records read:          1284
 Total logical records rejected:         1
 Total logical records discarded:        0
 
-Run began on Wed Apr 19 23:57:30 2023
-Run ended on Wed Apr 19 23:57:30 2023
+Run began on Wed May 03 18:16:54 2023
+Run ended on Wed May 03 18:16:54 2023
 
-Elapsed time was:     00:00:00.07
+Elapsed time was:     00:00:00.06
 CPU time was:         00:00:00.01

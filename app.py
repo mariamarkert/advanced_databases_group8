@@ -1,20 +1,17 @@
-import http.server
-import socketserver
-import sqlite3
+import subprocess
 
-# Set up a basic HTTP server to serve the login page
-PORT = 8000
-Handler = http.server.SimpleHTTPRequestHandler
-httpd = socketserver.TCPServer(("", PORT), Handler)
+# Define the command to start Apache server
+command = "sudo service httpd start"
 
-# Connect to the SQLite database
-conn = sqlite3.connect('users.db')
-c = conn.cursor()
+# Run the command using subprocess
+process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
-# Create a table to store user information
-c.execute('''CREATE TABLE IF NOT EXISTS users
-             (username text, password text)''')
+# Wait for the process to complete and capture the output
+output, error = process.communicate()
 
-# Serve the login page
-print(f"Serving at http://localhost:{PORT}/login.html")
-httpd.serve_forever()
+# Check if there were any errors
+if process.returncode != 0:
+    print("Failed to start Apache server:")
+    print(error.decode('utf-8'))
+else:
+    print("Apache server started successfully.")

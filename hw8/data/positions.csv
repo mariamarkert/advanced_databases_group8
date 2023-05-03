@@ -1,0 +1,14 @@
+CB,Cornerback,D
+DB,Defensive Back,D
+DL,Defensive Line,D
+H,Holder,S
+K,Kicker,S
+LB,Linebacker,D
+LS,Long Snapper,S
+OL,Offensive Line,O
+P,Punter,S
+QB,Quarterback,O
+RB,Running Back,O
+S,Safety,D
+TE,Tight End,O
+WR,Wide Receiver,O
