@@ -1,11 +1,11 @@
 
-SQL*Loader: Release 11.2.0.2.0 - Production on Wed May 3 18:16:54 2023
+SQL*Loader: Release 11.2.0.2.0 - Production on Thu Apr 27 20:56:02 2023
 
 Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
 
-Control File:   loadStages.ctl
-Data File:      ../data/stages.csv
-  Bad File:     stages.bad
+Control File:   loadData/loadZips.ctl
+Data File:      data/newzips.csv
+  Bad File:     loadData/newzips.bad
   Discard File:  none specified
  
  (Allow all discards)
@@ -17,32 +17,34 @@ Bind array:     64 rows, maximum of 256000 bytes
 Continuation:    none specified
 Path used:      Conventional
 
-Table STAGE, loaded from every logical record.
+Table ZIPS, loaded from every logical record.
 Insert option in effect for this table: APPEND
+TRAILING NULLCOLS option in effect
 
    Column Name                  Position   Len  Term Encl Datatype
 ------------------------------ ---------- ----- ---- ---- ---------------------
-STAGE_ID                            FIRST     *   ,  O(") CHARACTER            
-STG_NAME                             NEXT     *   ,  O(") CHARACTER            
+ZIP                                 FIRST     *   ,  O(") CHARACTER            
+STCODE                               NEXT     *   ,  O(") CHARACTER            
+CITY                                 NEXT     *   ,  O(") CHARACTER            
 
 
-Table STAGE:
-  4 Rows successfully loaded.
+Table ZIPS:
+  40643 Rows successfully loaded.
   0 Rows not loaded due to data errors.
   0 Rows not loaded because all WHEN clauses were failed.
   0 Rows not loaded because all fields were null.
 
 
-Space allocated for bind array:                  33024 bytes(64 rows)
+Space allocated for bind array:                  49536 bytes(64 rows)
 Read   buffer bytes: 1048576
 
 Total logical records skipped:          0
-Total logical records read:             4
+Total logical records read:         40643
 Total logical records rejected:         0
 Total logical records discarded:        0
 
-Run began on Wed May 03 18:16:54 2023
-Run ended on Wed May 03 18:16:54 2023
+Run began on Thu Apr 27 20:56:02 2023
+Run ended on Thu Apr 27 20:56:03 2023
 
-Elapsed time was:     00:00:00.03
-CPU time was:         00:00:00.01
+Elapsed time was:     00:00:01.03
+CPU time was:         00:00:00.08
