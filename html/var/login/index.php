@@ -16,7 +16,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4 col-md-offset-4 text-center">
-				<form action="login.php" method="post">
+				<form class="block-form" action="login.php" method="post">
 					<h2>LOGIN</h2>
 					<?php if (isset($_GET['error'])) { ?>
 						<p class="error"><?php echo $_GET['error']; ?></p>
