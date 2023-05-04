@@ -2,7 +2,9 @@
 <html>
 <head>
 	<title>Account Settings Example</title>
-	<link rel="stylesheet" href="css/styles.css">
+
+	<link rel="stylesheet" href="../css/styles.css">
+
 </head>
 <body>
     <header>
