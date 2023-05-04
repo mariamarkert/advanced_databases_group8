@@ -60,11 +60,14 @@
 </head>
 <body>
 	<h1>Login</h1>
-	<form action="">
-		<label for="username">Username</label>
-		<input type="text" id="username" name="username">
+	<?php if (isset($_GET['error'])) { ?>
+		<p class="error"><?php echo $_GET['error']; ?></p>
+	<?php } ?>
+	<form action="login.php" method="post">
+		<label for="uname">Username</label>
+		<input type="text" class="form-control" id="uname" name="uname" placeholder="User Name">
 		<label for="password">Password</label>
-		<input type="password" id="password" name="password">
+		<input type="password" class="form-control" id="password" name="password" placeholder="Password">
 		<input type="submit" value="Login">
 	</form>
 </body>
