@@ -60,7 +60,9 @@
 </head>
 <body>
 	<h1>Create User</h1>
+
 	<form class="block-form" action="createUser.php" method="post">
+
 		<label for="username">Username</label>
 		<input type="text" id="username" name="username">
 		<label for="password">Password</label>
