@@ -58,6 +58,7 @@ html header a {
 }
 html header a:hover {
 	background-color: #ff4d94;
+	color: #000;
 }
 html h1 {
 	color: #ff66b3;
@@ -82,6 +83,21 @@ html h1 {
 }
 .btn:hover {
 	background-color: #ff4d94;
+}
+.btn-home {
+	display: block;
+	margin: 0 auto;
+	margin-top: 50px;
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #ff66b3;
+	border-radius: 25px;
+	text-decoration: none;
 }
 html input[type="text"], input[type="password"] {
 	display: block;

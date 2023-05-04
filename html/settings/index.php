@@ -25,7 +25,7 @@
 
                     // Retrieve user info from database
                     //$user_id = $_SESSION['userid']; // replace with actual user ID
-					$user_id = 0;
+					$user_id = 123;
                     $query = "SELECT * FROM users WHERE user_id = '$user_id'"; // replace with your actual query
                     $stmt = oci_parse($conn, $query);
                     
