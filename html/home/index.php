@@ -15,30 +15,34 @@
 
     <section class="container">
         <div class="row justify-content-between">
-    		<div class="col-sm-2">
+    		<div class="col-sm-3">
+				<h2 class="text-center">May 2023</h2>
         		<?php include "../templates/maycal.php" ?>
     			</div>
 			</div>
 			<div class="col-sm-2">
-                <button onclick = "window.location.href='../logPeriod/';" class="btn">Log Period</button>
+                <button onclick = "window.location.href='../logPeriod/';" class="btn-home">Log Period</button>
             </div>
     		
 		</div>
 
-		<div class="row justify-content-between">
-            <div class="col-sm-6">
-                <div class="text-section">
+		<div class="row justify-content-between" style="margin-top:40px">
+			<br>
+			<br>
+            <center class="col-sm-6 mt:4">
+                <center class="text-section">
+				
                     <h2>Exercises</h2>
-                    <p>The Best Exercises for you in this stage will be low impact includeinf Gentle Stretching and relaxation, and Low-Impact aerobic exercise.</p>
-                </div>
-			</div>
-			<div class="col-sm-6">
+                    <p>The best exercises for you in this stage will be low impact, includeing gentle stretching and relaxation, and aerobic exercise.</p>
+                </center>
+			</center>
+			<center class="col-sm-6">
 
-                <div class="text-section">
+                <center class="text-section">
                     <h2>Nutrition</h2>
                     <p>The best things to eat in this phase include: Red meat, poultry, fish, beans, lentils, tofu, fortified cereals, leafy green vegetables, dried fruits</p>
-                </div>
-            </div>
+                </center>
+            </center>
         </div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
