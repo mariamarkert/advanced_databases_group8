@@ -1,5 +1,5 @@
 
-SQL*Loader: Release 11.2.0.2.0 - Production on Wed May 3 18:16:54 2023
+SQL*Loader: Release 11.2.0.2.0 - Production on Thu May 4 00:20:14 2023
 
 Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
 
@@ -65,12 +65,33 @@ Field in data file exceeds maximum length
 Record 1: Rejected - Error on table EXERCISE, column EX_ID.
 ORA-01722: invalid number
 
+Record 2: Rejected - Error on table EXERCISE.
+ORA-00001: unique constraint (RAMZI.SYS_C006993) violated
+
+Record 3: Rejected - Error on table EXERCISE.
+ORA-00001: unique constraint (RAMZI.SYS_C006993) violated
+
+Record 4: Rejected - Error on table EXERCISE.
+ORA-00001: unique constraint (RAMZI.SYS_C006993) violated
+
+Record 5: Rejected - Error on table EXERCISE.
+ORA-00001: unique constraint (RAMZI.SYS_C006993) violated
+
+Record 6: Rejected - Error on table EXERCISE.
+ORA-00001: unique constraint (RAMZI.SYS_C006993) violated
+
+Record 7: Rejected - Error on table EXERCISE.
+ORA-00001: unique constraint (RAMZI.SYS_C006993) violated
+
+Record 8: Rejected - Error on table EXERCISE.
+ORA-00001: unique constraint (RAMZI.SYS_C006993) violated
+
 Record 26: Rejected - Error on table EXERCISE, column EX_DESC.
 Field in data file exceeds maximum length
 
 Table EXERCISE:
-  7 Rows successfully loaded.
-  19 Rows not loaded due to data errors.
+  0 Rows successfully loaded.
+  26 Rows not loaded due to data errors.
   0 Rows not loaded because all WHEN clauses were failed.
   0 Rows not loaded because all fields were null.
 
@@ -80,11 +101,11 @@ Read   buffer bytes: 1048576
 
 Total logical records skipped:          0
 Total logical records read:            26
-Total logical records rejected:        19
+Total logical records rejected:        26
 Total logical records discarded:        0
 
-Run began on Wed May 03 18:16:54 2023
-Run ended on Wed May 03 18:16:55 2023
+Run began on Thu May 04 00:20:14 2023
+Run ended on Thu May 04 00:20:15 2023
 
-Elapsed time was:     00:00:00.03
-CPU time was:         00:00:00.01
+Elapsed time was:     00:00:00.04
+CPU time was:         00:00:00.00
