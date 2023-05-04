@@ -16,7 +16,7 @@
 		echo $e['message'];
    	}
 */
-
+ini_set('session.save_path', '/data');
 putenv("ORACLE_HOME=/u01/app/oracle/product/11.2.0/xe");
 putenv("LD_LIBRARY_PATH=/u01/app/oracle/product/11.2.0/xe/lib");
 $conn = oci_connect("ramzi", "ramzi", "(DESCRIPTION =

@@ -14,10 +14,10 @@
 		$pass = validate($_POST['password']);
 		
 		if (empty($uname)) {
-			header("Location: ../?error=User Name is required");
+			header("Location: ../index.html?error=User Name is required");
 	    	exit();
 		}else if(empty($pass)){
-        	header("Location: ../?error=Password is required");
+        	header("Location: ../index.html?error=Password is required");
 	    	exit();
 		}else{
 			$query = "SELECT *  FROM users WHERE username='$uname' AND upassword='$pass'";
@@ -34,11 +34,11 @@
 		
 			if ($username  === $uname && $password === $pass) {
           			$_SESSION['userid'] = $userid;
-					echo $_SESSION['userid'];
-        			header("Location: ../settings/");
+					//echo $_SESSION['userid'];
+        			header("Location: ../home/");
         			exit();
     		} else {
-        		//header("Location: ../?error=Incorrect User name or password");
+        		header("Location: ../index.html?error=Incorrect User name or password");
         		exit();
     		}
 
@@ -46,7 +46,7 @@
 		}
 		
 	}else{
-		//header("Location: ../");
+		header("Location: ../index.html");
 		exit();
 	}
 

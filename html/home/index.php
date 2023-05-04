@@ -71,11 +71,7 @@
 			border: none;
 		}
 		.text-section {
-			width: 75%; 
-		}
-		.info-section {
-			width: 100%;
-			background-color: #ffe6f2;
+			width: 45%;
 		}
 		.text-section h2 {
 			color: #ff66b3;
@@ -91,34 +87,26 @@
 	</style>
 </head>
 <body>
-                    <header>
-                        <a href="home/index.html">Home</a>
-						<a href="myflow/index.html">My Flow</a>
-                        <a href="exercise/index.html">Exercise</a>
-                        <a href="nutrition/index.html">Nutrition</a>
-                        <a href="#">Account Settings</a>
-                    </header>
-                    <h1>You are in stage: stage goes here</h1>
-					
-					<h3>this will be a description about the stage ect.</h3>
-					
+		<?php 
+					include "../templates/header.php";
+					include "../templates/your_stage.php"; ?>   
+					<button>Log Period</button>
                     <section>
+						<div class="calendar">
+							<h2>Upcoming Events</h2>
+							<iframe src="https://calendar.google.com/calendar/embed?src=en.usa%23holiday%40group.v.calendar.google.com&ctz=America%2FNew_York" style="border: 0" frameborder="0" scrolling="no"></iframe>
+						</div>
+                        <div class="image-section">
+                            <img src="https://via.placeholder.com/400x400.png?text=Image+Placeholder" alt="Sample Image">
                         </div>
-						<section class="info-section">
-						<img src="menstrual-cycle.png" alt="period icon" width="300">
-                        <center>
-                            <h1>Your most recent cycle</h1>
-							<h2>Cycle length: </h2>
-								<h4> 26 days </h4>
-								<h4> April 6 - May 1 </h4>
-							<h2>Symptoms: </h2>
-								<ul>
-									<h4>headache </h4>
-									<h4>cramps</h4>
-									<h4>nausea </h4>
-								</ul>
-                        </center>
-						</section>
+                        <div class="text-section">
+                            <h2>Exercises</h2>
+                            <p>The Best Exercises for you in this stage will be low impact includeinf Gentle Stretching and relaxation, and Low-Impact aerobic exercise.</p>
+                        </div>
+                        <div class="text-section">
+                            <h2>Nutrition</h2>
+                            <p>The best things to eat in this phase include: Red meat, poultry, fish, beans, lentils, tofu, fortified cereals, leafy green vegetables, dried fruits</p>
+                           </div>
                     </section>
                 </body>
                 
