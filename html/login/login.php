@@ -38,7 +38,7 @@
         			header("Location: ../home/");
         			exit();
     		} else {
-        		header("Location: ../?error=Incorrect User name or password");
+        		//header("Location: ../?error=Incorrect User name or password");
         		exit();
     		}
 
@@ -46,7 +46,7 @@
 		}
 		
 	}else{
-		header("Location: ../");
+		//header("Location: ../");
 		exit();
 	}
 
