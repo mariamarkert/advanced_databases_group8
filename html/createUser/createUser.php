@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		// height and weight are numeric, proceed with insertion
 		$height = (int)$_POST['height'];
 		$weight = (int)$_POST['weight'];
-		$pregnancies = (int)$_POST['pregnancies']);
+		$pregnancies = (int)$_POST['pregnancies'];
 	} else {
 		// height and/or weight are not numeric, handle error
 		echo "Error: Height and weight must be numeric values.";
