@@ -1,6 +1,8 @@
+drop TRIGGER update_cycle_length;
+drop TRIGGER cycle_id_trigger;
 
 CREATE SEQUENCE cycle_id_seq
-  START WITH 0
+  START WITH 1283
   INCREMENT BY 1
   NOCACHE
   NOCYCLE;
