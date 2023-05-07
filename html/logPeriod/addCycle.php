@@ -24,8 +24,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
        // Prepare the query
        $query = "INSERT INTO cycle (user_id, user_cycle_id, cycle_length, headache, cramps, nausea, fatigue, acne, bloating, period_start, period_end)
-              VALUES (:user_id, cycle_user_id_seq.nextval, NULL, :headache, :cramps, :nausea, :fatigue, :acne, :bloating, TO_DATE(:period_start, 'yyyy-mm-dd'), TO_DATE(:period_end, 'yyyy-mm-dd'))";
+          VALUES (:user_id, :user_cycle_id, NULL, :headache, :cramps, :nausea, :fatigue, :acne, :bloating, TO_DATE(:period_start, 'yyyy-mm-dd'), TO_DATE(:period_end, 'yyyy-mm-dd'))";
        $stmt = oci_parse($conn, $query);
+
 
        // Bind the values to the prepared statement
        oci_bind_by_name($stmt, ':user_id', $user_id);
