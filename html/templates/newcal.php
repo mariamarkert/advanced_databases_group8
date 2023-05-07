@@ -30,7 +30,7 @@
 		$num_days = date('t', strtotime($given_date));
 
 		// Calculate the offset based on the first day of the month
-		$offset = $first_day - 1;
+		$offset = ($first_day + 5) % 7;
 
 		// Loop through each day in the given date's month
 		for ($day = 1; $day <= $num_days; $day++) {
