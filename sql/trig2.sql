@@ -3,13 +3,13 @@ drop TRIGGER cycle_id_trigger;
 drop SEQUENCE cycle_id_seq;
 drop SEQUENCE user_cycle_id_seq;
 /
-CREATE OR REPLACE SEQUENCE cycle_id_seq
+CREATE SEQUENCE cycle_id_seq
   START WITH 1283
   INCREMENT BY 1
   NOCACHE
   NOCYCLE;
 /
-CREATE OR REPLACE SEQUENCE user_cycle_id_seq;
+CREATE SEQUENCE user_cycle_id_seq;
 /
 CREATE OR REPLACE TRIGGER cycle_id_trigger
 BEFORE INSERT ON cycle
