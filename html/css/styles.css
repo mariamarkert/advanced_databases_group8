@@ -1,7 +1,9 @@
 /* styles.css */
 
 .number-wrapper {
-			display: inline-block;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			position: relative;
 			width: 54px;
 			height: 54px;
