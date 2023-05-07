@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$user_id = 127;
     // Prepare the query
     $query = "INSERT INTO users (user_id, username, upassword, first_name, last_name, birthday, uheight, uweight, bmi, num_preg)
-              VALUES (:user_id, :username, :password, :first_name, :last_name, TO_DATE(:birthday, 'yyyy-mm-dd'), :height, :weight, NULL, :pregnancies)";
+              VALUES (:user_id, :username, :password, :first_name, :last_name, TO_DATE(:birthday, 'yyyy-mm-dd'), :height, :weight, 1, :pregnancies)";
     $stmt = oci_parse($conn, $query);
 	echo $query;
 
