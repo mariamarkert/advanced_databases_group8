@@ -4,7 +4,7 @@
         $user_id = 0;
         // Close the DB connection
         
-        $query = "select * from (select * from cycle where user_id='$user_id' order by user_cycle_id DESC) where rownum=2";
+        $query = "select * from (select * from cycle where user_id='$user_id' order by user_cycle_id DESC) where rownum=5";
         
         $stid = oci_parse($conn, $query);
         oci_execute($stid);
