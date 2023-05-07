@@ -23,8 +23,14 @@
 		// Get the given date
 		$given_date = '2023-05-10';
 
+		// Get the first day of the given date's month
+		$first_day = date('N', strtotime(date('Y-m-01', strtotime($given_date))));
+
 		// Get the number of days in the given date's month
 		$num_days = date('t', strtotime($given_date));
+
+		// Calculate the offset based on the first day of the month
+		$offset = $first_day - 1;
 
 		// Loop through each day in the given date's month
 		for ($day = 1; $day <= $num_days; $day++) {
@@ -36,12 +42,18 @@
 		        $is_next_7_days = true;
 		    }
 
+		    // Determine the grid column for this day
+		    $col = ($day + $offset) % 7;
+		    if ($col == 0) {
+		        $col = 7;
+		    }
+
 		    // Generate the button HTML
 		    echo '<div class="number-wrapper';
 		    if ($is_next_7_days) {
 		        echo ' red';
 		    }
-		    echo '">';
+		    echo '" style="grid-column: ' . $col . '">';
 		    echo $day;
 		    echo '</div>';
 		}
