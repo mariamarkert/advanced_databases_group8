@@ -1,14 +1,14 @@
 drop TRIGGER update_cycle_length;
 drop TRIGGER cycle_id_trigger;
-
+/
 CREATE SEQUENCE cycle_id_seq
   START WITH 1283
   INCREMENT BY 1
   NOCACHE
   NOCYCLE;
-
+/
 CREATE SEQUENCE user_cycle_id_seq;
-
+/
 CREATE OR REPLACE TRIGGER cycle_id_trigger
 BEFORE INSERT ON cycle
 FOR EACH ROW
@@ -17,7 +17,7 @@ BEGIN
     :new.user_cycle_id := user_cycle_id_seq.nextval;
     :new.cycle_length := NULL;
 END;
-
+/
 CREATE OR REPLACE TRIGGER update_cycle_length
 BEFORE INSERT ON cycle
 FOR EACH ROW
