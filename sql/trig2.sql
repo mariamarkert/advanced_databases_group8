@@ -1,4 +1,8 @@
-
+drop TRIGGER update_cycle_length;
+drop TRIGGER cycle_id_trigger;
+drop SEQUENCE cycle_id_seq;
+drop SEQUENCE user_cycle_id_seq;
+/
 CREATE OR REPLACE SEQUENCE cycle_id_seq
   START WITH 1283
   INCREMENT BY 1
@@ -62,5 +66,7 @@ BEGIN
     :new.user_cycle_id := COALESCE(last_user_cycle_id, 0) + 1;
 END;
 /
+
+
 
 
