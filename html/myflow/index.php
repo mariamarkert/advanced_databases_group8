@@ -20,7 +20,7 @@
                             <h1 style="margin-top:30px">Your most recent cycle</h1>
 							<h2>Cycle length: </h2>
 								<h4> <?php include "cycle_len.php"; ?> days</h4>
-								<h4> April 6 - May 1 </h4>
+								<h4> <?php include "cycle_dates.php"; ?> </h4>
 							<h2>Symptoms: </h2>
 								
 								<h4>headache </h4>

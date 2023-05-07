@@ -10,10 +10,11 @@
         oci_execute($stid);
         $lengths = array();
         while (($row = oci_fetch_array($stid, OCI_ASSOC)) != false) {
-            $lengths[] = date('m-d', strtotime($row['PERIOD_START']));
+            $lengths[] = date('M d', strtotime($row['PERIOD_START']));
         }
 
         echo $lengths[0];
+        echo " to ";
         echo $lengths[1];
 
         oci_free_statement($stid);
