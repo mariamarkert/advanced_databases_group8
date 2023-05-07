@@ -29,7 +29,7 @@
         $prediction = (int) ($prediction / $denom);
 
         // Print the prediction
-        echo "Predicted period length: $prediction days";
+       
 
 
         // Close the DB connection
@@ -45,7 +45,6 @@
 
         $newDate = date('Y-m-d', strtotime($formattedDate . ' +' . $prediction . ' days'));
 
-        echo $newDate;
         
 
         oci_free_statement($stid);

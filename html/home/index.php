@@ -18,8 +18,8 @@
     <section class="container">
         <div class="row justify-content-between">
     		<div class="col-sm-3">
-				<h2 class="text-center">May 2023</h2>
-        		<?php include "../templates/maycal.php" ?>
+				
+        		<?php include "../templates/newcal.php" ?>
     			</div>
 			</div>
 			<div class="col-sm-2">
