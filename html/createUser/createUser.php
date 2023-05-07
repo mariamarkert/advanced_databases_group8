@@ -34,13 +34,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     // Execute the prepared statement
     if (oci_execute($stmt)) {
-        //echo 'User created successfully.';
-		header("Location: ../home/");
+        echo 'User created successfully.';
+		//header("Location: ../home/");
 		oci_free_statement($stmt);
     	oci_close($conn);
-    	exit();
+    	//exit();
     } else {
         $error = oci_error($stmt);
+		echo $error;
         //header("Location: ../createUser/?Error creating user");
 		oci_free_statement($stmt);
     	oci_close($conn);
@@ -55,5 +56,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			
     
 
-?>
+
 
