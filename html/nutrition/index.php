@@ -18,11 +18,9 @@
 						<section class="text-section" style="background-color: #ffe6f2">
 							<center>
                             <h1 style="margin-top:20px">Recommended Nutrition</h1>
-							<h4>Based on the stage of your cycle that you are in, these foods have the nutrients that will help your body thrive:</h4>
-							<h3> Red meat and poultry </h3>
-							<h3> Leafy green vegetables </h3>
-							<h3> Beans and Lentils </h3>
-							</center>
+							<h4>Based on the stage of your cycle that you are in, you should focus on <?php include "nut_name.php" ?></h4>
+							<h3><?php include "nut_desc.php" ?></h3>
+														</center>
                         </section>
                     </section>
                 </body>

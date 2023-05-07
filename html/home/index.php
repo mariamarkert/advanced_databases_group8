@@ -11,6 +11,8 @@
     <?php 
         include "../templates/header.php";
         include "../templates/your_stage.php";
+		session_start();
+		echo $_SESSION['userid'];
     ?>   
 
     <section class="container">
@@ -33,15 +35,15 @@
                 <center class="text-section">
 				
                     <h2>Exercises</h2>
-                    <p>The best exercises for you in this stage will be low impact, includeing gentle stretching and relaxation, and aerobic exercise.</p>
+                    <p><?php include "../sql_php/exercise_home.php" ?></p>
                 </center>
 			</center>
 			<center class="col-sm-6">
 
                 <center class="text-section">
                     <h2>Nutrition</h2>
-                    <p>The best things to eat in this phase include: Red meat, poultry, fish, beans, lentils, tofu, fortified cereals, leafy green vegetables, dried fruits</p>
-                </center>
+					<p><?php include "../sql_php/nutrition_home.php";?></p>
+                 </center>
             </center>
         </div>
     </section>

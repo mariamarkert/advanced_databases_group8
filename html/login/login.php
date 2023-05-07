@@ -2,8 +2,9 @@
 <?php 
 	session_start(); 
 	include "../connect/connect.php";
-
+	echo "hi1";
 	if (isset($_POST['uname']) && isset($_POST['password'])) {
+		echo "hi2";
 		function validate($data){
        		$data = trim($data);
 	   		$data = stripslashes($data);
@@ -27,18 +28,20 @@
 			oci_execute($stmt);
 			$row = oci_fetch_array($stmt);
 			// Get the value of the username column for the first row
+			echo $row;
 			$username = $row['USERNAME'];
 			$password = $row['UPASSWORD'];
 			$userid = $row['USER_ID'];
 		
-		
+			echo $username;
 			if ($username  === $uname && $password === $pass) {
           			$_SESSION['userid'] = $userid;
 					echo $_SESSION['userid'];
-        			header("Location: ../settings/");
+					session_write_close();
+        			header("Location: ../home/");
         			exit();
     		} else {
-        		//header("Location: ../?error=Incorrect User name or password");
+        		header("Location: ../?error=Incorrect User name or password");
         		exit();
     		}
 
@@ -46,7 +49,7 @@
 		}
 		
 	}else{
-		//header("Location: ../");
+		header("Location: ../");
 		exit();
 	}
 

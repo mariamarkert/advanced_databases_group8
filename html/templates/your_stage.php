@@ -1,12 +1,22 @@
 	<?php 
-		$userid = 0;
-		$user_stage = 1;
 		include "../connect/connect.php";	
-		$query = "SELECT *  FROM stage WHERE stage_id='$user_stage'";
-		$stmt = oci_parse($conn, $query);
-		oci_execute($stmt);
-		$row = oci_fetch_array($stmt);
-		$stage_name = $row['STG_NAME'];
+		include "../templates/set_stage_id.php ";
+		
+		session_start();
+		if(isset($_SESSION['userid']) && isset($_SESSION['stageid'])){
+			$userid = $_SESSION['userid'];
+			$user_stage = $_SESSION['stageid'];
+			
+			
+			$query = "SELECT *  FROM stage WHERE stage_id='$user_stage'";
+			$stmt = oci_parse($conn, $query);
+			oci_execute($stmt);
+			$row = oci_fetch_array($stmt);
+			$stage_name = $row['STG_NAME'];
+		}else{
+			header("Location: ../");
+        	exit();
+		}
 				
 	?>
 
