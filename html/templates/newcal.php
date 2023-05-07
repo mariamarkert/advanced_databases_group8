@@ -21,7 +21,8 @@
 		date_default_timezone_set('America/New_York');
 
 		// Get the given date
-		$given_date = '2023-05-10';
+        include "../home/predict.php";
+		$given_date = predict_next();
 
 		// Get the first day of the given date's month
 		$first_day = date('N', strtotime(date('Y-m-01', strtotime($given_date))));
