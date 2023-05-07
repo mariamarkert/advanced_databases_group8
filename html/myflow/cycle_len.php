@@ -10,7 +10,7 @@
         while (($row = oci_fetch_array($stid, OCI_ASSOC)) != false) {
             $lengths[] = $row['CYCLE_LENGTH'];
         }
-        
+        echo $lengths;
         echo $lengths[3];
         
 
