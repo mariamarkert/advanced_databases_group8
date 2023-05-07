@@ -6,6 +6,7 @@
 // Check if the form was submitted
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Validate inputs
+	echo $_POST['username'];
     $username = htmlspecialchars($_POST['username']);
     $password = htmlspecialchars($_POST['password']);
     $first_name = htmlspecialchars($_POST['first-name']);
