@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     	//exit();
     } else {
         $error = oci_error($stmt);
-		echo $error;
+		echo 'Error creating user: ' . $error['message'];
         //header("Location: ../createUser/?Error creating user");
 		oci_free_statement($stmt);
     	oci_close($conn);
