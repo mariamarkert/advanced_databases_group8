@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
        // Perform any necessary validation and sanitation of the data
 
        // Prepare the query
-       $query = "INSERT INTO cycle (user_id, user_cycle_id, cycle_length, headache, cramps, nausea, fatigue, acne, bloating, period_start, period_end)
+       $query = "INSERT INTO cycle (user_id, user_cycle_id, cycle_length, headache, cramps, nausea, fatigue, acne, bloatng, period_start, period_end)
           VALUES (:user_id, :user_cycle_id, NULL, :headache, :cramps, :nausea, :fatigue, :acne, :bloating, TO_DATE(:period_start, 'yyyy-mm-dd'), TO_DATE(:period_end, 'yyyy-mm-dd'))";
        $stmt = oci_parse($conn, $query);
 
