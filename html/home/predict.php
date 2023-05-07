@@ -38,7 +38,7 @@
     $row = oci_fetch_array($stid);
 
 	$last_start = $row['period_start'];
-    echo $last_start
+    echo $last_start;
     $formattedDate = date_format(date_create($last_start), "Y-m-d"); // format the date in "YYYY-MM-DD" format
 
     $newDate = date('Y-m-d', strtotime($formattedDate . ' +' . $prediction . ' days'));
