@@ -13,9 +13,9 @@
             $lengths[] = date('M d', strtotime($row['PERIOD_START']));
         }
 
-        echo $lengths[0];
-        echo " to ";
         echo $lengths[1];
+        echo " to ";
+        echo $lengths[0];
 
         oci_free_statement($stid);
         oci_close($conn);

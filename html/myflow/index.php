@@ -22,10 +22,8 @@
 								<h4> <?php include "cycle_len.php"; ?> days</h4>
 								<h4> <?php include "cycle_dates.php"; ?> </h4>
 							<h2>Symptoms: </h2>
+								<?php include "symptoms.php"; ?> 
 								
-								<h4>headache </h4>
-								<h4>cramps</h4>
-								<h4>nausea </h4>
 								
                         </center>
 						</section>
