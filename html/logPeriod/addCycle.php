@@ -30,6 +30,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
        // Bind the values to the prepared statement
        oci_bind_by_name($stmt, ':user_id', $user_id);
+       oci_bind_by_name($stmt, ':user_cycle_id', $user_cycle_id);
+       oci_bind_by_name($stmt, ':cycle_length', $cycle_length);
        oci_bind_by_name($stmt, ':headache', $headache);
        oci_bind_by_name($stmt, ':cramps', $cramps);
        oci_bind_by_name($stmt, ':nausea', $nausea);
