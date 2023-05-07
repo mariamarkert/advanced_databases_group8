@@ -8,6 +8,11 @@
         
         $stid = oci_parse($conn, $query);
         oci_execute($stid);
+        $err = oci_error($stid);
+        if ($err) {
+            echo "Error message: " . $err['message'] . "\n";
+            echo "Query: " . $query . "\n";
+        }
         // Fetch the first row (most recent cycle)
         $row = oci_fetch_array($stid, OCI_ASSOC);
 
@@ -28,7 +33,7 @@
         if ($row['acne'] == 1) {
             echo "<h4>acne</h4>";
         }
-        if ($row['bloatng'] == 1) {
+        if ($row['blotng'] == 1) {
             echo "<h4>bloating</h4>";
         }
         } else {
