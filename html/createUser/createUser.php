@@ -55,33 +55,6 @@ if (oci_execute($stmt)) {
     oci_close($conn);
     exit();
 }
-Note that I have removed the line $user_id = 127 and replaced it with $user_id = uniqid(), since you want to generate a unique ID for each user. Additionally, I have removed the placeholders in the query string and replaced them with named parameters (e.g. :user_id) that are then bound to the actual values using the oci_bind_by_name() function.
-
-
-
-
-
-
-
-
-    // Execute the prepared statement
-    if (oci_execute($stmt)) {
-        echo 'User created successfully.';
-		//header("Location: ../home/");
-		oci_free_statement($stmt);
-    	oci_close($conn);
-    	//exit();
-    } else {
-        $error = oci_error($stmt);
-		echo 'Error creating user: ' . $error['message'];
-        //header("Location: ../createUser/?Error creating user");
-		oci_free_statement($stmt);
-    	oci_close($conn);
-		exit();
-    }
-
-    // Clean up
-    
 }
 ?>
 
