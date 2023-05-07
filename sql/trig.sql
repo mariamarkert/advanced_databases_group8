@@ -13,4 +13,6 @@ FOR EACH ROW
 BEGIN
     SELECT user_id_seq.nextval INTO :new.user_id FROM dual;
 END;
+
+
 /
