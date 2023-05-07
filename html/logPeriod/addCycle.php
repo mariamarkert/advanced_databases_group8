@@ -9,8 +9,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Validate inputs
 	
     $user_id = $_SESSION['userid'];
-       $period_start = $_POST['period-start'];
-       $period_end = $_POST['period-end'];
+       $period_start = $_POST['date-started'];
+       $period_end = $_POST['date-ended'];
        $symptoms = $_POST['symptoms'];
        // Get the checkbox values
        $headache = isset($_POST['symptoms']) && in_array('Headache', $_POST['symptoms']) ? 1 : 0;
