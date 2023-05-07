@@ -12,17 +12,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $first_name = htmlspecialchars($_POST['first-name']);
     $last_name = htmlspecialchars($_POST['last-name']);
     $birthday = htmlspecialchars($_POST['birthday']);
-	if (is_numeric($_POST['height']) && is_numeric($_POST['weight'])) {
+	if (is_numeric($_POST['height']) && is_numeric($_POST['weight']) && is_numeric($_POST['pregnancies']) ) {
 		// height and weight are numeric, proceed with insertion
 		$height = (int)$_POST['height'];
 		$weight = (int)$_POST['weight'];
+		$pregnancies = (int)$_POST['pregnancies']);
 	} else {
 		// height and/or weight are not numeric, handle error
 		echo "Error: Height and weight must be numeric values.";
 		exit();
 	}
 	
-    $pregnancies = htmlspecialchars($_POST['pregnancies']);
+    
 	$user_id = 127;
     // Prepare the query
     $query = "INSERT INTO users (user_id, username, upassword, first_name, last_name, birthday, uheight, uweight, bmi, num_preg)
