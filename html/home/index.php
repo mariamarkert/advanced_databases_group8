@@ -15,16 +15,16 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <button onclick="window.location.href='../logPeriod/';" class="btn-home">Log Period</button>
-                <br>
+            </div>
+            
+            <div class="col-md-4 text-center">
                 <h2>Prediction for: </h2>
-                <br>
-
                 <?php include "../templates/newcal.php" ?>
             </div>
             
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <!-- Empty column for spacing -->
             </div>
         </div>
@@ -49,3 +49,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 </body>
 </html>
+
