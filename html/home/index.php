@@ -18,13 +18,13 @@
     <section class="container">
         <div class="row justify-content-between">
     		<div class="col-lg-1">
-                <row>
+                
                 
                 <button onclick = "window.location.href='../logPeriod/';" class="btn-home">Log Period</button>
                 <br>
                 <h2>Prediction for: </h2>
                 <br>
-                <br>
+                
         		<?php include "../templates/newcal.php" ?>
     			</div>
 			</div>
