@@ -23,7 +23,7 @@
 		// Get the given date
         include "../home/predict.php";
 $given_date = predict_next();
-echo '<h2 class="text-center">' . date('F Y', strtotime($given_date)) . '</h2>'; // Add this line
+echo '<h2 class="text-center">' . date('F Y', strtotime($given_date)) . '</h2><br><row>'; // Add this line
 
 
 // Get the month and year from the given date
@@ -62,7 +62,7 @@ for ($day = 1; $day <= $num_days; $day++) {
     }
     echo '" style="grid-column: ' . $col . '">';
     echo $day;
-      echo '</div>';
+      echo '</div></row>';
 
 
 		}
