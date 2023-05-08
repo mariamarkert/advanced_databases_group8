@@ -17,7 +17,7 @@
 
     <section class="container">
         <div class="row">
-    		<div class="col-lg-1">
+    		<div class="col-lg-2">
                 
                 
                 <button onclick = "window.location.href='../logPeriod/';" class="btn-home">Log Period</button>
