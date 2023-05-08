@@ -221,10 +221,14 @@ html label {
 }
 
 .calendar {
-			display: grid;
-			grid-template-columns: repeat(7, 1fr);
-			grid-gap: 10px;
-		}
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-gap: 10px;
+}
+.calendar .number-wrapper.red {
+	background-color: red;
+}
+
 .form-container {
 			display: flex;
 			justify-content: center;

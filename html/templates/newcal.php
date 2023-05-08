@@ -1,19 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Calendar</title>
-	<link rel="stylesheet" type="text/css" href="../css/styles.css">
-	<style>
-		.calendar {
-			display: grid;
-			grid-template-columns: repeat(7, 1fr);
-			grid-gap: 10px;
-		}
-		.calendar .number-wrapper.red {
-			background-color: red;
-		}
-	</style>
-</head>
+
 <body>
     <?php
 date_default_timezone_set('America/New_York');
