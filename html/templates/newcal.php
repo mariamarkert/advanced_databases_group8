@@ -2,6 +2,16 @@
 <html>
 <header>
     <link rel="stylesheet" href="../css/styles.css">
+    <style>
+		.calendar {
+			display: grid;
+			grid-template-columns: repeat(7, 1fr);
+			grid-gap: 10px;
+		}
+		.calendar .number-wrapper.red {
+			background-color: red;
+		}
+	</style>
 </header>
 <body>
     <?php
