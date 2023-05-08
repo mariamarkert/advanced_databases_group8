@@ -16,7 +16,7 @@
     ?>   
 
     <section class="container">
-        <div class="row justify-content-between">
+        <div class="row">
     		<div class="col-lg-1">
                 
                 
