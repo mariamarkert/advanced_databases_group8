@@ -33,7 +33,7 @@
             exit();
         }
     
-        
+ /*       
         $query = "INSERT INTO users (username, upassword, first_name, last_name, birthday, uheight, uweight, bmi, num_preg)
           VALUES (:username, :password, :first_name, :last_name, TO_DATE(:birthday, 'yyyy-mm-dd'), :height, :weight, NULL, :pregnancies)
           RETURNING user_id INTO :user_id";
@@ -49,7 +49,7 @@
         oci_bind_by_name($stmt, ':weight', $weight);
         oci_bind_by_name($stmt, ':pregnancies', $pregnancies);
         oci_bind_by_name($stmt, ':user_id', $user_id, -1, OCI_B_INT);
-/*
+
         // Execute the prepared statement
         if (oci_execute($stmt)) {
             // Retrieve the generated user_id value
