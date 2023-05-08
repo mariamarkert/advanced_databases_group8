@@ -24,15 +24,17 @@
 oci_fetch_all($stmt, $rows, null, null, OCI_FETCHSTATEMENT_BY_ROW);
 
 // Print the results
+echo "<section>";
 echo "<table>";
 foreach ($rows as $row) {
     echo "<tr>";
     foreach ($row as $column) {
-        echo "<td>" . $column . "</td>";
+        echo "<td class='bg2' style='border-radius: 10px'>" . $column . "</td>";
     }
     echo "</tr>";
 }
 echo "</table>";
+echo "</section>";
 
 oci_free_statement($stmt);
 oci_close($conn);

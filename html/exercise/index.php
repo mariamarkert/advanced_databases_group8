@@ -26,4 +26,4 @@
                     </section>
 					<p><?php include "sql_exercise.php"; ?> </p>
                 </body>
-                
+               
