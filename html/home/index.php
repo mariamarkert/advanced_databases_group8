@@ -11,47 +11,41 @@
     <?php 
         include "../templates/header.php";
         include "../templates/your_stage.php";
-	
-	
     ?>   
 
-    <section class="container">
+    <div class="container-fluid">
         <div class="row">
-    		
-                
-                
-                <button onclick = "window.location.href='../logPeriod/';" class="btn-home">Log Period</button>
+            <div class="col-md-6">
+                <button onclick="window.location.href='../logPeriod/';" class="btn-home">Log Period</button>
                 <br>
                 <h2>Prediction for: </h2>
                 <br>
 
-        		<?php include "../templates/newcal.php" ?>
-    			</div>
-			</div>
-			
-    		
-		</div>
+                <?php include "../templates/newcal.php" ?>
+            </div>
+            
+            <div class="col-md-6">
+                <!-- Empty column for spacing -->
+            </div>
+        </div>
 
-		<div class="row justify-content-between" style="margin-top:40px">
-			<br>
-			<br>
-            <center class="col-sm-6 mt:4">
+        <div class="row" style="margin-top:40px">
+            <div class="col-md-6">
                 <center class="text-section">
-				
                     <h2>Exercises</h2>
                     <p><?php include "../sql_php/exercise_home.php" ?></p>
                 </center>
-			</center>
-			<center class="col-sm-6">
-
+            </div>
+            
+            <div class="col-md-6">
                 <center class="text-section">
                     <h2>Nutrition</h2>
-					<p><?php include "../sql_php/nutrition_home.php";?></p>
-                 </center>
-            </center>
+                    <p><?php include "../sql_php/nutrition_home.php";?></p>
+                </center>
+            </div>
         </div>
-    </section>
+    </div>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 </body>
 </html>
-           
