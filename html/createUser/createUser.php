@@ -33,10 +33,10 @@
             exit();
         }
     
-        $user_id = 128;
+        
         // Prepare the query
-        $query = "INSERT INTO users (username, upassword, first_name, last_name, birthday, uheight, uweight, bmi, num_preg)
-              VALUES (:username, :password, :first_name, :last_name, TO_DATE(:birthday, 'yyyy-mm-dd'), :height, :weight, NULL, :pregnancies)";
+        $query = "INSERT INTO users (userid, username, upassword, first_name, last_name, birthday, uheight, uweight, bmi, num_preg)
+              VALUES (user_id_seq.nextval, :username, :password, :first_name, :last_name, TO_DATE(:birthday, 'yyyy-mm-dd'), :height, :weight, NULL, :pregnancies)";
         $stmt = oci_parse($conn, $query);
     
         // Bind the values to the prepared statement
@@ -52,7 +52,7 @@
     
         // Execute the prepared statement
         if (oci_execute($stmt)) {
-            $_SESSION["userid"] = $user_id;
+            $_SESSION['userid'] = $user_id;
             echo 'User created successfully.';
             oci_free_statement($stmt);
             oci_close($conn);
