@@ -1,5 +1,5 @@
 LOAD DATA
-INFILE '../data/exercises4.csv'
+INFILE '../data/exercises.csv'
 APPEND INTO TABLE exercise
 FIELDS TERMINATED BY ','
 OPTIONALLY ENCLOSED BY '"'
