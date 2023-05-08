@@ -1,5 +1,5 @@
 LOAD DATA
-INFILE '../data/cycles.csv'
+INFILE '../data/cleaned_cycles4.csv'
 APPEND INTO TABLE cycle
 FIELDS TERMINATED BY ','
 OPTIONALLY ENCLOSED BY '"'

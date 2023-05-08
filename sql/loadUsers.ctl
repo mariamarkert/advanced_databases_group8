@@ -1,5 +1,5 @@
 LOAD DATA
-INFILE '../data/users.csv'
+INFILE '../data/users6.csv'
 APPEND INTO TABLE users
 FIELDS TERMINATED BY ','
 OPTIONALLY ENCLOSED BY '"'
