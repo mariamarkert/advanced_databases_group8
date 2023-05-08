@@ -10,7 +10,7 @@ $conn = oci_connect("ramzi", "ramzi", "(DESCRIPTION =
     )
   )"
 );
-echo $conn;
+
 
 if (!$conn) {
     $e = oci_error();
