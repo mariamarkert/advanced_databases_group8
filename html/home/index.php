@@ -17,10 +17,10 @@
 
     <section class="container">
         <div class="row justify-content-between">
-    		<div class="col-lg-2">
+    		<div class="col-lg-5">
                 <row>
-                <div>
-                <button onclick = "window.location.href='../logPeriod/';" class="btn-home">Log Period</button></div>
+                
+                <button onclick = "window.location.href='../logPeriod/';" class="btn-home">Log Period</button>
         		<?php include "../templates/newcal.php" ?>
     			</div>
 			</div>
