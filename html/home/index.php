@@ -22,9 +22,7 @@
         		<?php include "../templates/newcal.php" ?>
     			</div>
 			</div>
-			<div class="col-sm-2">
-                <button onclick = "window.location.href='../logPeriod/';" class="btn-home">Log Period</button>
-            </div>
+			
     		
 		</div>
 
