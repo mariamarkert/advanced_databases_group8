@@ -38,7 +38,7 @@
           			$_SESSION['userid'] = $userid;
 					echo $_SESSION['userid'];
 					session_write_close();
-        			header("Location: ../home/");
+        			//header("Location: ../home/");
         			exit();
     		} else {
         		//header("Location: ../?error=Incorrect User name or password");
