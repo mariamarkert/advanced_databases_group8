@@ -26,13 +26,14 @@
         $stmt = oci_parse($conn, $query);
         oci_bind_by_name($stmt, ':username', $username);
         oci_execute($stmt);
-        
-        $count = oci_fetch_array($stmt)];
+
+        $count = oci_fetch_array($stmt);
         if ($count['cnt'] > 0) {
             // Username already exists, handle error
             echo "Error: Username already exists.";
             exit();
         }
+
     
  /*       
         $query = "INSERT INTO users (username, upassword, first_name, last_name, birthday, uheight, uweight, bmi, num_preg)
