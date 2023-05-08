@@ -3,7 +3,7 @@
 		include "../templates/set_stage_id.php ";
 		
 		session_start();
-		//if(isset($_SESSION['userid']) && isset($_SESSION['stageid'])){
+		if(isset($_SESSION['userid']) && isset($_SESSION['stageid'])){
 			$userid = $_SESSION['userid'];
 			$userid = 0;
 			$user_stage = $_SESSION['stageid'];
@@ -15,10 +15,10 @@
 			oci_execute($stmt);
 			$row = oci_fetch_array($stmt);
 			$stage_name = $row['STG_NAME'];
-		//}else{
-			//header("Location: ../");
-        //	exit();
-		//}
+		}else{
+			header("Location: ../");
+        	exit();
+		}
 				
 	?>
 

@@ -41,8 +41,8 @@
 						
 			}
 		}else{
-			$_SESSION['stageid'] = 1;
-			//header("Location: ../");
+			//$_SESSION['stageid'] = 1;
+			header("Location: ../");
         			
 		}
 						
