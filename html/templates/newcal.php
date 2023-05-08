@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-
+<header>
+    <link rel="stylesheet" href="../css/styles.css">
+</header>
 <body>
     <?php
 date_default_timezone_set('America/New_York');
@@ -8,7 +10,7 @@ date_default_timezone_set('America/New_York');
 // Get the given date
 include "../home/predict.php";
 $given_date = predict_next();
-echo '<h2 class="text-center">' . date('F Y', strtotime($given_date)) . '</h2>'; // Add this line ?>
+echo '<h2 class="text-center">' . date('F Y', strtotime($given_date)) . '</h2></row>'; // Add this line ?>
 
 	<div class="calendar">
 		<?php
