@@ -17,7 +17,7 @@
 
     <section class="container">
         <div class="row justify-content-between">
-    		<div class="col-sm-3">
+    		<div class="col-lg-3">
 				
         		<?php include "../templates/newcal.php" ?>
     			</div>
