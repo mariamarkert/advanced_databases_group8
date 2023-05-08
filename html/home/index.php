@@ -21,6 +21,10 @@
                 <row>
                 
                 <button onclick = "window.location.href='../logPeriod/';" class="btn-home">Log Period</button>
+                <br>
+                <h2>Prediction for: </h2>
+                <br>
+                <br>
         		<?php include "../templates/newcal.php" ?>
     			</div>
 			</div>
