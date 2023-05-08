@@ -47,12 +47,14 @@ if (oci_execute($stmt)) {
     echo 'User created successfully.';
     oci_free_statement($stmt);
     oci_close($conn);
-    //exit();
+    header("Location: ../home/");
+    exit();
 } else {
     $error = oci_error($stmt);
     echo 'Error creating user: ' . $error['message'];
     oci_free_statement($stmt);
     oci_close($conn);
+    header("Location: ../createUser");
     exit();
 }
 }
