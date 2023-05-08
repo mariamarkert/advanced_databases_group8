@@ -14,7 +14,7 @@
 			$row = oci_fetch_array($stmt);
 			$stage_name = $row['STG_NAME'];
 		}else{
-			header("Location: ../");
+			//header("Location: ../");
         	exit();
 		}
 				
