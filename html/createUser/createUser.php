@@ -20,7 +20,7 @@
             echo "Error: Height and weight must be numeric values.";
             exit();
         }
-    
+    /*
         // Check if the username already exists in the database
         $query = "SELECT COUNT(*) FROM users WHERE username = :username";
         $stmt = oci_parse($conn, $query);
