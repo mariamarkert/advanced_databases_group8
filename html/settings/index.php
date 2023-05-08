@@ -22,12 +22,12 @@
 				session_start();
 				
 		
-               //if (isset($_SESSION['userid'])) {
+               if (isset($_SESSION['userid'])) {
                     include "../connect/connect.php";
 
                     // Retrieve user info from database
-                    //$user_id = $_SESSION['userid']; // replace with actual user ID
-					$user_id = 123;
+                    $user_id = $_SESSION['userid']; // replace with actual user ID
+					//$user_id = 123;
                     $query = "SELECT * FROM users WHERE user_id = '$user_id'"; // replace with your actual query
                     $stmt = oci_parse($conn, $query);
                     
@@ -43,7 +43,7 @@
                     $weight = $user['UWEIGHT'];
                     $numpreg = $user['NUM_PREG'];
 					$birthday = date("Y-m-d", strtotime($birthday));
-					
+               }	
 		
 
         ?>
