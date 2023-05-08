@@ -13,7 +13,7 @@
         include "../templates/your_stage.php";
     ?>   
 
-    <div class="container-fluid bg-white text-center" style="margin-top:40px;">
+    <div class="container text-center" style="margin-top:40px;">
         <div class="row">
             <div class="col-md-4">
                 <button onclick="window.location.href='../logPeriod/';" class="btn-home">Log Period</button>
