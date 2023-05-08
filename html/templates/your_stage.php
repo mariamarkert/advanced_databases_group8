@@ -7,6 +7,7 @@
 			$userid = $_SESSION['userid'];
 			$userid = 0;
 			$user_stage = $_SESSION['stageid'];
+			$user_stage = 1;
 			
 			
 			$query = "SELECT *  FROM stage WHERE stage_id='$user_stage'";
