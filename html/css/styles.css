@@ -39,7 +39,7 @@ html body {
 
 html header {
 			background-color: #ff66b3;
-			padding: 10px;
+			padding: 20px;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
@@ -155,7 +155,7 @@ html section {
 .text-section {
 	width: 40%;
 }
-.text-section h2 {
+.text-section h2 {i
 	color: #ff66b3;
 	font-size: 24px;
 	margin-bottom: 20px;
@@ -168,13 +168,6 @@ html section {
 }
 
 .bg2 {
-	background-color: #ffe6f2;
-	margin-top: 10px;
-	margin-left: 10px;
-	border-radius: 10px;
-}
-
-.bg3 {
 	background-color: #ffe6f2;
 }
 
