@@ -17,7 +17,7 @@
 
     <section class="container">
         <div class="row justify-content-between">
-    		<div class="col-lg-5">
+    		<div class="col-lg-1">
                 <row>
                 
                 <button onclick = "window.location.href='../logPeriod/';" class="btn-home">Log Period</button>
