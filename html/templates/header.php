@@ -4,5 +4,6 @@
 	<a href="../exercise/">Exercise</a>
     <a href="../nutrition">Nutrition</a>
     <a href="../settings">Account Settings</a>
+	<a href="../templates/logout.php">Logout</a>
 </header>
                     
