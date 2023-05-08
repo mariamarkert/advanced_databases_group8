@@ -34,8 +34,8 @@
             exit();
         }
 
-    
- /*       
+
+        
         $query = "INSERT INTO users (username, upassword, first_name, last_name, birthday, uheight, uweight, bmi, num_preg)
           VALUES (:username, :password, :first_name, :last_name, TO_DATE(:birthday, 'yyyy-mm-dd'), :height, :weight, NULL, :pregnancies)
           RETURNING user_id INTO :user_id";
@@ -71,7 +71,7 @@
             header("Location: ../createUser");
             exit();
         }
-*/
+
     }
     
 ?>
