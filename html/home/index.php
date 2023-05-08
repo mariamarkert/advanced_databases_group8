@@ -11,8 +11,8 @@
     <?php 
         include "../templates/header.php";
         include "../templates/your_stage.php";
-		session_start();
-		echo $_SESSION['userid'];
+	
+	
     ?>   
 
     <section class="container">

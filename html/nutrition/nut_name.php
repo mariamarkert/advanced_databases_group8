@@ -21,21 +21,21 @@
 		//$exname = str_replace("'", "", $exname);
 		//$nutstring = "This stage is great time to focus exercises like $exname and always listening to you body for when to rest.";
 			$rows = array();
-oci_fetch_all($stmt, $rows, null, null, OCI_FETCHSTATEMENT_BY_ROW);
+		oci_fetch_all($stmt, $rows, null, null, OCI_FETCHSTATEMENT_BY_ROW);
 
-// Print the results
-echo "<table>";
-foreach ($rows as $row) {
-    echo "<tr>";
-    foreach ($row as $column) {
-        echo "<td>" . $column . "</td>";
-    }
-    echo "</tr>";
-}
-echo "</table>";
+		// Print the results
+		echo "<table>";
+		foreach ($rows as $row) {
+			echo "<tr>";
+			foreach ($row as $column) {
+				echo "<td>" . $column . "</td>";
+			}
+			echo "</tr>";
+		}
+		echo "</table>";
 
-oci_free_statement($stmt);
-oci_close($conn);
+		oci_free_statement($stmt);
+		oci_close($conn);
 		
 					
 	}else{

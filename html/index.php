@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php 
-session_save_path("/home/ec2-user/advanced_databases_group8/html/tmp"); 
+
 session_start(); 
 $_SESSION['userid'] = 0;
 ?>

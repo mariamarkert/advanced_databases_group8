@@ -38,6 +38,7 @@
           			$_SESSION['userid'] = $userid;
 					echo $_SESSION['userid'];
 					session_write_close();
+					include "../templates/set_stage_id.php";
         			header("Location: ../home/");
         			exit();
     		} else {

@@ -1,7 +1,7 @@
 <?php
     include "../connect/connect.php";
-        //$user_id = $_SESSION['userid'];
-        $user_id = 0;
+        $user_id = $_SESSION['userid'];
+        //$user_id = 0;
         // Close the DB connection
         
         $query = "select * from (select * from cycle where user_id='$user_id' order by user_cycle_id DESC) where rownum<=5";
