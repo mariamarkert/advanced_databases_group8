@@ -5,6 +5,7 @@
 		session_start();
 		if(isset($_SESSION['userid']) && isset($_SESSION['stageid'])){
 			$userid = $_SESSION['userid'];
+			$userid = 0;
 			$user_stage = $_SESSION['stageid'];
 			
 			
