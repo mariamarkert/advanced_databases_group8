@@ -8,4 +8,4 @@ OPTIONALLY ENCLOSED BY '"'
 	ex_name, 
 	ex_type, 
 	ex_desc, 
-	ideal_stage_id )
+	ideal_stage_id TERMINATED BY '\r')
