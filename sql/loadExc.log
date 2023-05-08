@@ -1,11 +1,11 @@
 
-SQL*Loader: Release 11.2.0.2.0 - Production on Thu May 4 00:20:14 2023
+SQL*Loader: Release 11.2.0.2.0 - Production on Mon May 8 01:50:06 2023
 
 Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
 
 Control File:   loadExc.ctl
-Data File:      ../data/exercises.csv
-  Bad File:     exercises.bad
+Data File:      ../data/exercises4.csv
+  Bad File:     exercises4.bad
   Discard File:  none specified
  
  (Allow all discards)
@@ -26,7 +26,7 @@ EX_ID                               FIRST     *   ,  O(") CHARACTER
 EX_NAME                              NEXT     *   ,  O(") CHARACTER            
 EX_TYPE                              NEXT     *   ,  O(") CHARACTER            
 EX_DESC                              NEXT     *   ,  O(") CHARACTER            
-IDEAL_STAGE_ID                       NEXT     *  WHT O(") CHARACTER            
+IDEAL_STAGE_ID                       NEXT     *   ,  O(") CHARACTER            
 
 Record 9: Rejected - Error on table EXERCISE, column EX_DESC.
 Field in data file exceeds maximum length
@@ -66,32 +66,30 @@ Record 1: Rejected - Error on table EXERCISE, column EX_ID.
 ORA-01722: invalid number
 
 Record 2: Rejected - Error on table EXERCISE.
-ORA-00001: unique constraint (RAMZI.SYS_C006993) violated
+ORA-00001: unique constraint (TIMMY.SYS_C007042) violated
 
 Record 3: Rejected - Error on table EXERCISE.
-ORA-00001: unique constraint (RAMZI.SYS_C006993) violated
+ORA-00001: unique constraint (TIMMY.SYS_C007042) violated
 
 Record 4: Rejected - Error on table EXERCISE.
-ORA-00001: unique constraint (RAMZI.SYS_C006993) violated
+ORA-00001: unique constraint (TIMMY.SYS_C007042) violated
 
 Record 5: Rejected - Error on table EXERCISE.
-ORA-00001: unique constraint (RAMZI.SYS_C006993) violated
+ORA-00001: unique constraint (TIMMY.SYS_C007042) violated
 
 Record 6: Rejected - Error on table EXERCISE.
-ORA-00001: unique constraint (RAMZI.SYS_C006993) violated
+ORA-00001: unique constraint (TIMMY.SYS_C007042) violated
 
 Record 7: Rejected - Error on table EXERCISE.
-ORA-00001: unique constraint (RAMZI.SYS_C006993) violated
+ORA-00001: unique constraint (TIMMY.SYS_C007042) violated
 
 Record 8: Rejected - Error on table EXERCISE.
-ORA-00001: unique constraint (RAMZI.SYS_C006993) violated
+ORA-00001: unique constraint (TIMMY.SYS_C007042) violated
 
-Record 26: Rejected - Error on table EXERCISE, column EX_DESC.
-Field in data file exceeds maximum length
 
 Table EXERCISE:
   0 Rows successfully loaded.
-  26 Rows not loaded due to data errors.
+  25 Rows not loaded due to data errors.
   0 Rows not loaded because all WHEN clauses were failed.
   0 Rows not loaded because all fields were null.
 
@@ -100,12 +98,12 @@ Space allocated for bind array:                  82560 bytes(64 rows)
 Read   buffer bytes: 1048576
 
 Total logical records skipped:          0
-Total logical records read:            26
-Total logical records rejected:        26
+Total logical records read:            25
+Total logical records rejected:        25
 Total logical records discarded:        0
 
-Run began on Thu May 04 00:20:14 2023
-Run ended on Thu May 04 00:20:15 2023
+Run began on Mon May 08 01:50:06 2023
+Run ended on Mon May 08 01:50:06 2023
 
-Elapsed time was:     00:00:00.04
+Elapsed time was:     00:00:00.03
 CPU time was:         00:00:00.00

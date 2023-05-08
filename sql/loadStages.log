@@ -1,5 +1,5 @@
 
-SQL*Loader: Release 11.2.0.2.0 - Production on Thu May 4 00:20:14 2023
+SQL*Loader: Release 11.2.0.2.0 - Production on Mon May 8 01:38:30 2023
 
 Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
 
@@ -25,22 +25,10 @@ Insert option in effect for this table: APPEND
 STAGE_ID                            FIRST     *   ,  O(") CHARACTER            
 STG_NAME                             NEXT     *   ,  O(") CHARACTER            
 
-Record 1: Rejected - Error on table STAGE.
-ORA-00001: unique constraint (RAMZI.SYS_C006987) violated
-
-Record 2: Rejected - Error on table STAGE.
-ORA-00001: unique constraint (RAMZI.SYS_C006987) violated
-
-Record 3: Rejected - Error on table STAGE.
-ORA-00001: unique constraint (RAMZI.SYS_C006987) violated
-
-Record 4: Rejected - Error on table STAGE.
-ORA-00001: unique constraint (RAMZI.SYS_C006987) violated
-
 
 Table STAGE:
-  0 Rows successfully loaded.
-  4 Rows not loaded due to data errors.
+  4 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
   0 Rows not loaded because all WHEN clauses were failed.
   0 Rows not loaded because all fields were null.
 
@@ -50,11 +38,11 @@ Read   buffer bytes: 1048576
 
 Total logical records skipped:          0
 Total logical records read:             4
-Total logical records rejected:         4
+Total logical records rejected:         0
 Total logical records discarded:        0
 
-Run began on Thu May 04 00:20:14 2023
-Run ended on Thu May 04 00:20:14 2023
+Run began on Mon May 08 01:38:30 2023
+Run ended on Mon May 08 01:38:30 2023
 
-Elapsed time was:     00:00:00.16
+Elapsed time was:     00:00:00.13
 CPU time was:         00:00:00.01
