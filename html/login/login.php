@@ -2,13 +2,13 @@
 <?php 
 	session_start(); 
 	include "../connect/connect.php";
-	echo "hi1";
+	
 	if (isset($_POST['uname']) && isset($_POST['password'])) {
-		echo "hi2";
+		
 		function validate($data){
        		$data = trim($data);
 	   		$data = stripslashes($data);
-	   		//$data = htmlspecialchars($data);
+	   		$data = htmlspecialchars($data);
 	   		return $data;
 		}
 		$uname = validate($_POST['uname']);
@@ -38,10 +38,10 @@
           			$_SESSION['userid'] = $userid;
 					echo $_SESSION['userid'];
 					session_write_close();
-        			//header("Location: ../home/");
+        			header("Location: ../home/");
         			exit();
     		} else {
-        		//header("Location: ../?error=Incorrect User name or password");
+        		header("Location: ../?error=Incorrect User name or password");
         		exit();
     		}
 
@@ -49,7 +49,7 @@
 		}
 		
 	}else{
-		//header("Location: ../");
+		header("Location: ../");
 		exit();
 	}
 
